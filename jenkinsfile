@@ -8,3 +8,4 @@ node('docker') {
     //это стадия сборки
     stage 'Build'
     sh "./gradlew -Pversion=${version} build"
+}
